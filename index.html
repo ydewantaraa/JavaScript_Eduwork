@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple E-commerce</title>
+  <style>
+    .product { border: 1px solid #ccc; padding: 10px; margin: 10px; width: 200px; }
+    .product img { width: 100%; height: auto; }
+    .product-container { display: flex; flex-wrap: wrap; }
+    .filter { margin: 20px 0; }
+  </style>
+</head>
+<body>
+  <h1>Produk Kami</h1>
+
+  <div class="filter">
+    <label for="categoryFilter">Filter Kategori: </label>
+    <select id="categoryFilter">
+      <option value="all">Semua</option>
+      <option value="elektronik">Elektronik</option>
+      <option value="fashion">Fashion</option>
+      <option value="makanan">Makanan</option>
+    </select>
+  </div>
+
+  <div id="productContainer" class="product-container"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
